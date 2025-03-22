@@ -1,0 +1,113 @@
+/*
+GESTIONE RESPONSIVITA'
+Utiliziamo due breakpoint => sm e lg
+il contenitore principale del sito, avrà la classe container-lg
+
+SCEGLIAMO I COLORI
+
+SCELTA DEI FONT
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+
+    /* COLORI */
+    --colore-primario:#1a659e;
+    --colore-secondario:#ff6b35;
+    --variant-primario:#004e89;
+    --variant-secondario:#f7c59f;
+    --colore-primario-alpha: rgb(26, 101, 158, 0.65);
+    --colore-secondario-alpha: rgb(255, 107, 53, 0.65);
+    --white-color:#ffffff;
+
+    /* COLORE DEL TESTO */
+    --colore-testo: rgb(20, 20, 20);
+
+    /* SCELTA FONT */
+    --titoli-font:"Jaro", sans-serif;
+    --corpo-testo-font:"Parkinsans", sans-serif;
+
+}
+
+body{
+    font-family: var(--corpo-testo-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--titoli-font);
+}
+
+/* ==================GESTIONE HEADER E NAV BAR========================= */
+
+.nav-bar-main{
+    background-color: var(--colore-secondario);
+}
+
+.nav-bar-main a {
+    font-size: 130% !important;
+    color: var(--white-color);
+    letter-spacing: 1.1px;
+}
+
+.nav-bar-main li {
+    margin-right: 1.5rem !important;
+}
+
+#mia-font-brand {
+    font-size: 2rem !important;
+}
+
+
+/* ==================FINE GESTIONE HEADER E NAV BAR========================= */
+
+/*=====================================IMMAGINE DI SFONDO=========================*/
+
+.mia-bg-home{
+    background-image: url(../img/Immagine.Villa.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.mia-bg-home h1{
+    font-size: 3.5rem;
+    background-color: var(--colore-secondario-alpha);
+    color: var(--variant-primario);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mia-btn-color{
+    background-color: var(--colore-primario);
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+
+/*==============================FINE IMMAGINE DI SFONDO===========================*/
+
+/*==============================NUMERI===========================*/
+
+#nostri-numeri p {
+    margin-left: 7.5rem;
+    font-size: 1.5rem;
+}
+
+#nostri-numeri h2{
+    margin-bottom: 3rem;
+}
+
+#nostri-numeri span{
+    font-size: 2.5rem;
+    color: var(--variant-secondario);
+}
+
+
+
+/*==============================FINE NUMERI===========================*/
+
+
+
