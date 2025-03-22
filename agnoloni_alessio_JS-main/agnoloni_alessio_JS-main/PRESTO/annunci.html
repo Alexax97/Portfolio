@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Pagina -->
+    <title>Presto.it - La villa dei tuoi sogni è qui</title>
+    
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+    crossorigin="anonymous">
+    
+    <!-- My style CSS -->
+    <link rel="stylesheet" href="./css/my-style.css">
+    
+</head>
+
+<body>
+    
+    <div class="container-lg"> <!--Inizio container-lg-->
+        <header><!--inizio header-->
+            
+            <!-- inizio NAVBAR -->
+            <nav class="navbar navbar-expand-lg nav-bar-main">
+                <div class="container-fluid">
+                    
+                    <a id="mia-font-brand" class="navbar-brand" href="#">Presto.it</a>
+                    
+                    <!-- Menu Humburger -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        
+                        <!-- Voci di menu -->
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="annunci.html">I nostri annunci</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contatti.html">Contatti</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Chi siamo</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    
+                </div> <!--========================Fine container-fluid===============================-->
+                
+            </nav><!--=============================Fine NAVBAR============================================-->
+            
+        </header><!--Fine header-->
+    </div> <!--==========================Fine container-lg=============================-->
+    
+    
+    <main>
+        <div class="container-lg mt-5">
+            <div class="row">
+                
+                <div class="col-3">
+                    <h4>Filtra Annunci</h4>
+
+                    <h6 class="ms-3">per Regione</h6>
+                    <div id="filtri_regione" class="ms-3">
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="regioni" id="All" checked>
+                            <label class="form-check-label" for="All">Tutte le regioni</label>
+                        </div>
+                         
+                    </div><!--FIE FILTRI REGIONE-->
+                    
+                    <h6 class="ms-3">Per Prezzo</h6>
+
+                    <label for="customRange1" class="form-label">Prezzo</label>
+                    <input type="range" class="form-range" id="inputPrezzo" min = "0" max = "100" value="100">
+
+                </div> <!--FINE COLONNA FILTRI-->
+                
+                <div class="col-9">
+                    <h2 id="titolo">I nostri annunci</h2>
+                    
+                    <div id="cont_annunci" class="row">
+                        
+                    </div>
+                </div> <!--FINE COLONNA ANNUNCI-->
+                
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        
+    </footer>
+    
+    <script src="./js/annunci.js"></script>
+</body>
+
+</html>  
