@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+
+
+    <div class="bg-warning-subtle">
+    <!-- Titolo e Logo -->
+    <div class=container-fluid>
+        <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="col-6">
+                <img src="https://www.colonnesonore.net/images/stories/eventi/musica_cinema_cinepresa.jpg" class="img-fluid" alt="Logo">
+            </div>
+            <div class="col-6">
+                <h1>Film,musica e tanto Bootstrap</h1>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+    
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+        <div class="container-fluid">
+          <a class=" textnav navbar-brand nav-link" aria-current="page" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link textnav" href="https://www.comingsoon.it/cinema/recensioni/" target="_blank">Recensioni Film</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textnav" href="https://www.mymovies.it/cinema/" target="_blank">Film in sala</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link textnav" href="https://www.mymovies.it/film/imperdibili/" target="_blank">I più votati di sempre</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle textnav" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Musica
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item " href="https://music.apple.com/it/playlist/top-50-italia-hit-del-momento/pl.6f529c2e3f5842c4a78bbfe5d13c4bcd" target="_blank">Hit del momento</a></li>
+                  <li><a class="dropdown-item " href="https://www.rds.it/category/magazine/musica/cantanti/interviste-cantanti" target="_blank">Interviste e news</a></li>
+                  <li><a class="dropdown-item " href="https://www.blogdellamusica.eu/c/dischi/" target="_blank">Dischi</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+    <!-- Titolo -->
+    <div class=container-fluid>
+        <div class="row p-5">
+            <div class="col-12 d-flex justify-content-center">
+                <h2>Migliori film del momento</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carosello -->
+    <div class="container">
+    <div class="row w-100">
+    <div class="col-12 d-flex justify-content-center">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://m.media-amazon.com/images/S/pv-target-images/332c2c562e7643685a53e6a07593f1e1af73eed3a97e7852985e85e728578da0.jpg" class="img-fluid d-block w-100" alt="Immagine Film The Warrior">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Warrior - The Iron Claw</h5>
+              <p>La famiglia di wrestler Von Erech ha avuto enorme successo nel circuito del Wrestling degli anni 80, rendendo famosa la mossa detta Iron Claw</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://static.sky.it/editorialimages/b693e45af20f50396295b6953a85f7cb82e65d74/skytg24/it/spettacolo/cinema/2024/02/04/argylle-la-super-spia-cast/argtlle-poster.jpg?" class="img-fluid d-block w-100" alt="Immagine Film Argylle - La Superspia">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Argylle - La Superspia</h5>
+              <p>La scrittrice di una serie di romanzi di spionaggio di successo, in piena crisi creativa, si ritrova al centro di una lotta tra spie</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://i2.wp.com/masedomani.com/wp-content/uploads/2024/02/finalmente-lalba_icona.jpeg?fit=622%2C350&ssl=1&resize=1280%2C720" class="img-fluid d-block w-100" alt="Immagine Film Finalmente l'Alba">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Finalmente l'Alba</h5>
+              <p>Nella Roma degli anni Cinquanta, la giovane Mimosa partecipa ai provini per fare la comparsa in un kolossal in costume, ambientato ai tempi dell'antico Egitto</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </div>
+    </div>
+ 
+    <!-- titolo card -->
+    <div class=container-fluid>
+        <div class="row p-5">
+            <div class="col-12">
+                <h2>Guarda anche qualche intramontabile...</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Card -->
+    <div class="container-fluid">
+        <div class="row p-5">
+           <div class="col-12 col-md-4 d-flex justify-content-center p-3">
+            <div class="card" style="width: 23rem;">
+                <img src="https://mr.comingsoon.it/imgdb/locandine/big/1182.jpg" class="card-img-top" alt="Immagine Pulp Fiction">
+                <div class="card-body">
+                  <h5 class="card-title">Pulp Fiction</h5>
+                  <p class="card-text">Si incrociano le strade di personaggi legati al crimine. Un pugile che mente a un capo banda, due sicari che discutono massaggi ai piedi e panini, una coppia che rapina una caffetteria e altri danno vita a un dramma criminale comico quanto brutale.</p>
+                  <div class="position-absolute top-100 start-50 translate-middle">
+                  <a href="https://www.mymovies.it/film/1994/pulpfiction/" class="btn btn-primary" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="color-black" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+                  </svg>
+                </a>
+                  </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-12 col-md-4 d-flex justify-content-center p-3">
+            <div class="card" style="width: 23rem;">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTaPe2hUlc02X9r5pxnsC0-o5Vqp_m6kYtphrOW22gjXnLkQfuY" class="card-img-top" alt="Immagine The Truman Show">
+                <div class="card-body">
+                  <h5 class="card-title">The Truman Show</h5>
+                  <p class="card-text">Truman Burbank scopre che i primi trent'anni della propria vita non sono stati altro che una messinscena.</p>
+                  <div class="position-absolute top-100 start-50 translate-middle">
+                  <a href="https://www.mymovies.it/film/1998/thetrumanshow/" class="btn btn-primary" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="ccolor-black" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+                  </svg>
+                </a>
+                 </div>
+                </div>
+              </div>
+           </div>
+           <div class="col-12 col-md-4 d-flex justify-content-center p-3">
+            <div class="card" style="width: 23rem;">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ6P4J5irUozK-QizN05NksNkF7td2n1sF2lHn7_M_Gw-eudo4j" class="card-img-top" alt="Immagine Shining">
+                <div class="card-body">
+                  <h5 class="card-title">Shining</h5>
+                  <p class="card-text">Jack Torrance, aspirante scrittore, accetta l'incarico di guardiano invernale di un albergo in un luogo isolato sulle montagne del Colorado. Ma suo figlio Danny inizia a sperimentare delle visioni riguardo i terribili eventi accaduti nella struttura.</p>
+                  <div class="position-absolute top-100 start-50 translate-middle">
+                  <a href="https://www.mymovies.it/film/1980/shining/" class="btn btn-primary" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="color-black" class="bi bi-airplane-engines-fill" viewBox="0 0 16 16">
+                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.35 4.35 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0"/>
+                  </svg>
+                </a>
+                 </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+    
+    <!-- Titolo Musica -->
+    
+    <div class=container-fluid>
+        <div class="row p-5">
+            <div class="col-12">
+                <h2>E quando non puoi vedere film rilassati con un po' di musica</h2>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Carosello Musica -->
+    <div class="container carosellmusic">
+        <div class="row w-100">
+        <div class="col-12 d-flex justify-content-center">
+        <div id="carousel2ExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel2ExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel2ExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel2ExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://www.youtube.com/watch?v=TWeSGxtDjpA&ab_channel=AchilleLauro" target="_blank">
+                <img src="https://i0.wp.com/inchiostrosonoro.com/wp-content/uploads/2024/09/Achille-Lauro-Amore-disperato.jpg?fit=1000%2C563&ssl=1" class="img-fluid d-block w-100" alt="Amore Disperato-Achille Lauro">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Amore Disperato</h5>
+                  <p>Achille Lauro</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=7NyPatvPCcs&ab_channel=PinguiniVEVO" target="_blank">
+                <img src="https://i.ytimg.com/vi/y4aBys6QiWY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCzEoS_wApj8wq2qnPLzWZnrNk70Q" class="img-fluid d-block w-100" alt=".Romantico ma Muori-Pinguiini tattici nucleari">
+                </a>     
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Romantico ma muori</h5>
+                  <p>Pinguini Tattici Nucleari</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.youtube.com/watch?v=IIJJyaGUaXg&ab_channel=laurapausinitv" target="_blank">
+                <img src="https://i.ytimg.com/vi/QhhRmsmH0Pc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAzfy9wV1BRBHXh3GHN_iAfwPUvyg" class="img-fluid d-block w-100" alt="Ciao-Laura pausini">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Ciao</h5>
+                  <p>Laura Pusini</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel2ExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel2ExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        </div>
+    </div>
+
+
+    </div>
+        
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
