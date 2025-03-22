@@ -1,0 +1,166 @@
+:root{
+    --main-color:white;
+    --second-color:#FF7858;
+    --black:rgb(23,36,50);
+    --card-color:#FFF8F1;
+    --font-heading:"Playfair Display",serif;
+    --font-paragraph:"Rubik", sans-serif;
+}
+
+body{
+    font-family: var(--font-paragraph);
+}
+/* header */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-heading);
+}
+
+header{
+    background-image: url(Hero\ Section.png);
+    height: 100vh;
+}
+
+nav a{
+    color:var(--main-color) !important;
+}
+
+.bottoncino{
+    color:white;
+    z-index: auto;
+}
+
+.btn-custom{
+    background-color: var(--second-color);
+    color:var(--main-color);
+    padding: 10px 20px;
+}
+
+.btn-custom:hover{
+    border: 1px solid var(--second-color);
+    color:var(--second-color);
+}
+
+.Home:hover{
+    border-bottom: 2px solid #FF7858;
+    background-color: rgba(255, 166, 0, 0.836);
+}
+
+header p, h1{
+    color: var(--main-color);
+}
+
+/* main */
+
+h2 span{
+    border-bottom: 2px solid #FF7858;
+}
+
+.img-card1{
+    background-image: url(./card-img1.png);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-card2{
+    background-image: url(./card-img2.png);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.img-card3{
+    background-image: url(./card-img3.png);
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.position-img{
+    top: 450px;
+    left: 25px;
+    color: var(--main-color);
+}
+
+/* sezione card 2 */
+
+.card-custom{
+    background-color: var(--card-color);
+}
+
+.star{
+    color: var(--second-color);
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.price{
+    color: var(--second-color);
+    bottom: 0px;
+    left: 45px;
+    font-size: 25px;
+    
+}
+
+/* sezione Blog */
+
+.readm{
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* sezione recensioni */
+
+.recensioni{
+    background-color: rgb(233, 233, 233);
+}
+
+.star2{
+    color: rgba(230, 141, 7, 0.808);
+}
+
+.icona{
+    font-size: 60px;
+    top:-55px;
+    left:30px;
+}
+
+/* sezione newsletter */
+
+.newscont{
+    border:1px solid;
+    border-color: rgb(209, 209, 209);
+    padding: 60px 20px;
+}
+
+.titolonews{
+    color: grey;
+}
+
+
+.form-floating{
+    color: var(--second-color);
+    left:330px;
+    bottom: -35px;
+    
+}
+
+.form-floating:hover{
+    color: white;
+}
+
+.form-control{
+    background-color: var(--card-color);
+    
+}
+
+.form-control:hover{
+    background-color: #fac193;
+}    
+
+.pulsante{ 
+    bottom: -13px;
+    left: 600px;   
+}
