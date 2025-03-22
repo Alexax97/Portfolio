@@ -1,0 +1,15 @@
+.Logo{
+    height: 80px;
+    width: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.Link:hover{
+    color: red;
+}
